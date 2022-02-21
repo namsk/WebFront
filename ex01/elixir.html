@@ -90,6 +90,51 @@
         /* border-radius: 10px 30px; */
         border-radius: 50%;
       }
+
+      /* display vs visibility */
+      .seller {
+        /* display: 공간 점유 방식 결정
+          none, block, inline, inline-block */
+        /* display: none; */
+        /* visibility: 화면 표시 여부 결정
+          -> 공간 점유는 그대로 */
+        /* visibility: hidden; */
+      }
+
+      /* background 속성 */
+      body {
+        /* background-image: url("./images/Landscape.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: 100%; */
+
+        /* 축약형: 일괄 적용 */
+        /* background: url("./images/Landscape.jpg") bottom / 100% no-repeat fixed lightgray; */
+        /* 인자 순서: image position / size repeat attachment color */
+      }
+
+      .menu > li {
+        float: left;
+        list-style-type: none; /* 불릿 문자 스타일 */
+        width: 100px; /* 요소의 너비 */
+        height: 25px; /* 요소의 높이 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+        margin-right: 5px;
+      }
+
+      .menu {
+        margin-bottom: 10px;
+      }
+
+      article {
+        clear: both;
+      }
+
+      .beverage img {
+        float: left;
+        margin-right: 20px;
+      }
     </style>
   </head>
   <body>
